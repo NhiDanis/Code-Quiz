@@ -12,6 +12,8 @@ Include:
 * The game is over save initials and score
 
 ## Screenshot reference:
+<img width="1792" alt="Screen Shot 2020-10-24 at 1 51 43 PM" src="https://user-images.githubusercontent.com/68761490/97093374-2b779380-1600-11eb-99ed-a8f6710b92dd.png">
+
 
 ## BuiltWith
 

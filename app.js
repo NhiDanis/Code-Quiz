@@ -44,3 +44,16 @@ let questions = [
           }
       }, 1000);
   }
+
+  // Stop timer to end quiz
+  function endQuiz(){
+      clearInterval(timer);
+      let questionContent = `
+      <h2>End Quiz!</h2>
+      <h3>Your Score: ` + score + ` /100</h3>
+      <h3>You got ` + score + ` questions correct!</h3>
+      <input type="text" id="yourname" placeholder="Your Name">
+      <button onclick="setscore()">Set Score</button>`;
+
+      document.getElementById("questions").innerHTML = questionContent;
+  }

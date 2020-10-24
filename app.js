@@ -57,3 +57,20 @@ let questions = [
 
       document.getElementById("questions").innerHTML = questionContent;
   }
+
+  // Store the scores on local storage
+  function setScore(){
+      let highscoreName = document.getElementById("yourname").value
+      localStorage.setItem("highscore", score);
+      localStorage.setItem("highscoreName", yourname);
+      getScore();
+  }
+
+  function getScore(){
+      let questionContent = `
+      <h2>` + localStorage.getItem("highscoreName") + `'s highscore is:</h2>
+      <h1>` + localStorage.getItem("highscore") + `</h1>
+    <button onclick="reset()">Play Again</button>
+    `;
+    document.getElementById("questions").innerHTML = questionContent;
+  }

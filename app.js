@@ -90,10 +90,14 @@ function resetQuiz() {
     timeCount = 0;
     timer = null;
 
+    document.getElementById("timeCount").innerHTML = timeCount;
+
 let questionContent = `
 <h1>JavaScript Quiz!</h1>
 <h3>Click to play!   </h3>
 <button onclick="start()">Start!</button>`;
+
+document.getElementById("questions").innerHTML = questionContent;
 
 }
 
